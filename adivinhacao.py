@@ -6,7 +6,7 @@ numero_secreto = 42
 total_de_tetantivas = 3
 rodada = 1
 
-while(rodada <= total_de_tetantivas):
+for rodada in range (1,total_de_tetantivas + 1):
     print("tentativa {} de {}".format( rodada, total_de_tetantivas))
 
     chute_str = input("Digite o seu numero: ")
