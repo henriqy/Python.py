@@ -1,15 +1,17 @@
+import random
+
 print("********************************")
 print("bem vindo ao jogo de adivinhacao")
 print("********************************")
 
-numero_secreto = 42
+numero_secreto = random.randrange(1,101)
 total_de_tetantivas = 3
 rodada = 1
 
 for rodada in range (1,total_de_tetantivas + 1):
     print("tentativa {} de {}".format( rodada, total_de_tetantivas))
 
-    chute_str = input("Digite o seu numero: ")
+    chute_str = input("Digite um numero entre 1 e 100: ")
 
     chute = int(chute_str)
 
