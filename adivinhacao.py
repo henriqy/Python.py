@@ -8,9 +8,27 @@ numero_secreto = random.randrange(1,101)
 total_de_tetantivas = 3
 rodada = 1
 
-for rodada in range (1,total_de_tetantivas + 1):
-    print("tentativa {} de {}".format( rodada, total_de_tetantivas))
+print("Choose the level difficult")
+print("(1) Easy (2) Medium (3)Hard (4) God")
 
+level = int(input("Type the difficult: "))
+
+if(level == 1):
+    total_de_tetantivas = 20
+
+elif(level == 2):
+    total_de_tetantivas = 10
+
+elif(level == 3):
+    total_de_tetantivas = 5
+
+else:
+    total_de_tetantivas = 1
+
+for rodada in range (1,total_de_tetantivas + 1):
+    print()
+    print("tentativa {} de {}".format( rodada, total_de_tetantivas))
+    print()
     chute_str = input("Digite um numero entre 1 e 100: ")
 
     chute = int(chute_str)
@@ -25,6 +43,8 @@ for rodada in range (1,total_de_tetantivas + 1):
 
     if(numero_secreto == chute):
         print("voce acertou")
+        print()
+        print("Fim do Jogo")
         break
     else:
         if(maior):
@@ -35,5 +55,5 @@ for rodada in range (1,total_de_tetantivas + 1):
     
     rodada = rodada + 1
     
-    print("Fim do Jogo")
+print("Fim do Jogo")
     
