@@ -12,7 +12,7 @@ pontos = 1000
 
 print("Choose the level difficult")
 print("(1) Easy (2) Medium (3)Hard (4) God")
-
+print("\n")
 level = int(input("Type the difficult: "))
 
 if(level == 1):
@@ -24,7 +24,7 @@ elif(level == 2):
 elif(level == 3):
     total_de_tetantivas = 5
 
-else:
+elif(level == 4):
     total_de_tetantivas = 1
 
 for rodada in range (1,total_de_tetantivas + 1):
@@ -46,9 +46,21 @@ for rodada in range (1,total_de_tetantivas + 1):
     pontos = pontos - pontos_perdidos
 
     if(numero_secreto == chute):
+        print("\n")
         print("voce acertou e fez {} pontos".format(pontos))
-        print()
+        print("\n")
         print("Fim do Jogo")
+        print("\n")
+        print("       ___________      \n")
+        print("      '._==_==_=_.'     \n")
+        print("      .-\\:      /-.    \n")
+        print("     | (|:.     |) |    \n")
+        print("      '-|:.     |-'     \n")
+        print("        \\::.    /      \n")
+        print("         '::. .'        \n")
+        print("           ) (          \n")
+        print("         _.' '._        \n")
+        print("        '-------'       \n\n")
         break
     else:
         if(maior):
@@ -58,8 +70,27 @@ for rodada in range (1,total_de_tetantivas + 1):
             print("Voce errou, seu chute foi menor que o numero secreto")
     
     if(rodada >= total_de_tetantivas):
+        print("\n")
         print("Quantidade de pontos: {}".format(pontos))
         print("Fim do Jogo")
+        print("\n")
+
+        print("    _______________         \n")
+        print("   /               \\       \n") 
+        print("  /                 \\      \n")
+        print("//                   \\/\\  \n")
+        print("\\|   XXXX     XXXX   | /   \n")
+        print(" |   XXXX     XXXX   |/     \n")
+        print(" |   XXX       XXX   |      \n")
+        print(" |                   |      \n")
+        print(" \\__      XXX      __/     \n")
+        print("   |\\     XXX     /|       \n")
+        print("   | |           | |        \n")
+        print("   | I I I I I I I |        \n")
+        print("   |  I I I I I I  |        \n")
+        print("   \\_             _/       \n")
+        print("     \\_         _/         \n")
+        print("       \\_______/           \n")
     rodada = rodada + 1
     
 
